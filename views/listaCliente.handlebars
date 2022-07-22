@@ -1,0 +1,12 @@
+<h1>Listar de clientes</h1>
+
+{{#each cadastros}}
+    ID: {{id}}<br>
+    Nome: {{nome}}<br>
+    Email: {{email}}<br>
+    Senha: {{senha}}<br>
+    Cadastrado: {{#formatDate createdAt}}{{/formatDate}}<br><br> 
+    <a href="/del-cadastro/{{id}}"><button>Apagar</button></a> <br><br>
+    <a href="/edit-cadastro/{{id}}"><button>Editar</button></a>
+    <hr>
+{{/each}}

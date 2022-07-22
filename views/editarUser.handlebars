@@ -1,0 +1,17 @@
+<h1>Formulário Edição</h1>
+<form action="/edit-cadastro/{{cadastros.id}}" method="POST">
+
+    ID: {{cadastros.id}} <br><br>
+         
+    <label>Nome</label>
+    <input type="text" name="nome" value="{{cadastros.nome}}"><br><br>
+    <label>Email</label>
+    <input type="text" name="email" value="{{cadastros.email}}"><br><br>
+    <label>Senha</label>
+    <input type="text" name="senha" value="{{cadastros.senha}}"><br><br>
+        
+    <button type="sumbit">Atualizar</button>
+
+</form>
+
+    
